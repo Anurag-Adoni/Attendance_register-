@@ -94,12 +94,12 @@ try:
         smtp.starttls()
         smtp.ehlo()
 
-        smtp.login('mail.test.acc.99@gmail.com', 'pragri99')
+        smtp.login('enter mail id here', 'enter password here')
 
         subject = f'Attendance report of: {today}'
         body = JOIN_DATA
         msg = f'subject: {subject}\n\nUser Name: {user_name}\n\nclass Name: {class_name}\n\n{body}'
-        smtp.sendmail('mail.test.acc.99@gmail.com', email_id, msg)
+        smtp.sendmail('enter mail id here', email_id, msg)
         smtp.quit()
 except Exception as error:
     sg.popup("Unable to send attendance report via Mail please check Mail ID :)", error)
