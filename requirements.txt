@@ -1,1 +1,15 @@
 Attendance Report.exe 
+
+csv
+
+sys 
+
+datetime 
+
+collections
+
+codecs
+
+smtplib
+
+PySimpleGUI
